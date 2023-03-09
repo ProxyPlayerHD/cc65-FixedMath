@@ -1,29 +1,32 @@
 # cc65-FixedMath
-A Simple Fixed Point Library for cc65, uses the Q16.16 Format
+A Simple Fixed Point Math Library for cc65, it uses the Q16.16 Format
 
 Using it is simple, just include the .h file in your c source file and tell ld65 to include the .lib file when linking.
 
 # Implemented Functions:
 
 * Conversion:
-  * fxfromint(value);
-  * fxtoint(value);
+  * itox(value);
+  * atox(value);
+  * xtoi(value);
+  * xtoa(value, string, decimal_places);
+  * xtoaf(value, decimal_places);
 * Arithmetic:
-  * fxmul(multiplier, multiplicand);
-  * fxdiv(Dividend, Divisor);
-  * fxabs(value);
-  * fxsqrt(value);
-  * fxexp(value);
-  * fxlog(value);
-  * fxlog2(value);
+  * xmul(multiplier, multiplicand);
+  * xdiv(Dividend, Divisor);
+  * xabs(value);
+  * xsqrt(value);
+  * xexp(value);
+  * xlog(value);
+  * xlog2(value);
 * Trigonometric
-  * fxsin(fix16_t inAngle);
-  * fxcos(fix16_t inAngle);
-  * fxtan(fix16_t inAngle);
-  * fxasin(fix16_t inAngle);
-  * fxacos(fix16_t inAngle);
-  * fxatan(fix16_t inAngle);
-  * fxatan2(fix16_t inY , fix16_t inX);
+  * xsin(inAngle);
+  * xcos(inAngle);
+  * xtan(inAngle);
+  * xasin(inAngle);
+  * xacos(inAngle);
+  * xatan(inAngle);
+  * xatan2(inY, inX);
 
 # Defined Values:
 ```
